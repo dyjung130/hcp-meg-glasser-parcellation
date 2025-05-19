@@ -7,7 +7,7 @@ Once it is done, go to your command line tool of preference, follow the steps:
 
 ## 1. From the official the HCP S1200, resample labels
 ```
-wb_command -label-resample Q1-Q6_RelatedValidation210.CorticalAreas_dil_Final_Final_Areas_Group_Colors.32k_fs_LR.dlabel.nii S1200.R.sphere.32k_fs_LR.surf.gii
+wb_command -cifti-separate Q1-Q6_RelatedValidation210.CorticalAreas_dil_Final_Final_Areas_Group_Colors.32k_fs_LR.dlabel.nii COLUMN -label CORTEX_LEFT L.HCP-MMP1.32k_fs_LR.label.gii -label CORTEX_RIGHT R.HCP-MMP1.32k_fs_LR.label.gii
 ```
 (I have data with the repository but you can download the data (e.g., 1-Q6_RelatedValidation210.CorticalAreas_dil_Final_Final_Areas_Group_Colors.32k_fs_LR.dlabel.nii) from https://balsa.wustl.edu/qKxv).
 
